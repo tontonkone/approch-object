@@ -20,6 +20,14 @@ public class AdressePostale {
 
     }
 
+    public void setAddress(int numeroRue, String libelleRue, int codePostal, String ville, String pays){
+        this.numeroRue = numeroRue;
+        this.libelleRue = libelleRue;
+        this.codePostal = codePostal;
+        this.ville = ville;
+        this.pays = pays;
+    }
+
     @Override
     public String toString() {
         return "AdressePostale{" +

@@ -4,8 +4,18 @@ public class AdressePostale {
     int numeroRue;
     String libelleRue;
     int codePostal;
+
     String ville;
     String pays;
+
+    public AdressePostale(int numeroRue, String libelleRue, int codePostal, String ville, String pays) {
+        this.numeroRue = numeroRue;
+        this.libelleRue = libelleRue;
+        this.codePostal = codePostal;
+        this.ville = ville;
+        this.pays = pays;
+    }
+
     public static  void main(String[] args){
 
     }

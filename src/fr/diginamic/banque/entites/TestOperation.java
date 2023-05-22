@@ -12,9 +12,20 @@ public class TestOperation {
         Debit debit3 = new Debit("07/09/2023",123);
         Operation[] tab = {credit,credit1,credit2,credit3,debit,debit1,debit2,debit3};
 
+        int  result = 0,result1 = 0;
         for (int i = 0; i < tab.length; i++) {
+            System.out.println(tab[i].getType());
+            if(tab[i].getType() == "CREDIT"){
+                result += tab[i].montant;
+            }else {
+                result1 -= tab[i].montant;
+            }
             System.out.println(tab[i]);
         }
+
+        System.out.println("total credit = " + result);
+        System.out.println("total debit = " + result1);
+
 
     }
 }

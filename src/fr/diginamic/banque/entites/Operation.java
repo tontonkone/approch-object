@@ -14,22 +14,7 @@ public abstract class  Operation {
     public static void main(String[] args) {
 
     }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-    public double getMontant() {
-        return montant;
-    }
-
-    public void setMontant(double montant) {
-        this.montant = montant;
-    }
+    public abstract String getType();
 
     @Override
     public String toString() {

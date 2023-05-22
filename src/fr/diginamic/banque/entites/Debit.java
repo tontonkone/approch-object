@@ -9,6 +9,12 @@ public class Debit extends Operation{
 
     }
 
+
+    @Override
+    public String getType() {
+        return "DEBIT";
+    }
+
     @Override
     public String toString() {
         return "Debit operation = " + super.toString();

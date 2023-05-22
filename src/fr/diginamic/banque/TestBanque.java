@@ -14,7 +14,7 @@ public class TestBanque {
         tab[0] = new Compte(25,300);
         tab[1] = new CompteTaux(20,30,7);
         for (int i = 0; i < tab.length; i++) {
-            System.out.println(Arrays.toString(new Compte[]{tab[i]}));
+            System.out.println(tab[i]);
         }
     }
 }

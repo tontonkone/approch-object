@@ -27,6 +27,7 @@ public class LectureFichier {
             String[] separator  = line.split(";");
 
             villes.add(new Ville(separator[6],separator[2],separator[1], separator[9]));
+            //
             for ( Ville v: villes){
 
                     Integer nb = Integer.parseInt(v.getPopulation().replace(" ", ""));
@@ -38,8 +39,6 @@ public class LectureFichier {
             }
 
         }
-
-
 
     }
 }

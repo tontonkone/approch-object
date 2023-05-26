@@ -15,6 +15,9 @@ public class Ville {
         this.population = population;
     }
 
+    public Ville(String nice, int i) {
+    }
+
     public static void main(String[] args) {
         ArrayList<String> listVille = new ArrayList<>();
 
@@ -58,7 +61,7 @@ public class Ville {
                 "nom='" + this.getNom() + '\'' +
                 ", codeDepartement='" + this.getCodeDepartement() + '\'' +
                 ", region='" + this.getRegion() + '\'' +
-                ", population='" + this.getPopulation() + '\'' +
+                ", population='" + this.getPopulation()+ '\'' +
                 '}';
     }
 }
